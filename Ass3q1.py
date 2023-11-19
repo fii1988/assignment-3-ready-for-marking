@@ -14,10 +14,10 @@ def main():
         if daily_hrs[day-1] == max_hours:
             max_hours_days.append(day)
     
-    # Calculate total by dividiung total hours 
+    # Calculate total by dividing total hours 
     hours_worked = sum(daily_hrs)
     avg_hours = max_hours / len(daily_hrs)
-
+    #Days worked that were less than 7 
     under_7hrs = []
     for day in range(1, 6):
         if daily_hrs[day-1] < 7:
@@ -31,7 +31,7 @@ def main():
     print("\nThe total number of hours worked was:", hours_worked)
     print("The average number of hours worked each day was: {:.1f}".format(avg_hours))
     print("-----------------------------------------------------------------------------")
-    print("Days you slacked off (i.e. worked less than 7 hours): ")
+    print("Days you slacked off (i.e. worked less than 7 hours): ") 
     for day in under_7hrs:
         print(f"Day #{day}: {daily_hrs[day-1]} hours")
 

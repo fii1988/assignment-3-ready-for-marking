@@ -19,7 +19,7 @@ def print_guide_prize(list, avg_sales):
         if boxes_sold == 0:
             prize = ""
         elif boxes_sold > avg_sales:
-            prize = "Badge (above average)"
+            prize = "Badge"
         else:
             prize = "Left over cookies"
         print(f"{name}: {prize}")
